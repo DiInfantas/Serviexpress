@@ -15,5 +15,26 @@
       <ion-title>Menu</ion-title>
     </ion-toolbar>
   </ion-header>
-  <ion-content class="ion-padding"> Tap the button in the toolbar to open the menu. </ion-content>
+  <ion-content class="ion-padding"> Bienvenido a Serviexpress, seleccione su servicio a realizar</ion-content>
+
+  <div class="container">
+    <ion-list>
+      <ion-item>
+        <ion-select placeholder="Select a Fruit">
+          <div slot="label">Seleccione servicio <ion-text color="danger">(Obligatorio)</ion-text></div>
+          <ion-select-option value="apple">Mantencion general</ion-select-option>
+          <ion-select-option value="banana">Vulcanizacion</ion-select-option>
+          <ion-select-option value="orange">Cambio de aceite</ion-select-option>
+          <ion-select-option value="orange">Revision</ion-select-option>
+        </ion-select>
+        <br>
+
+        
+      </ion-item>
+
+      <ion-item>
+        <ion-datetime [showDefaultButtons]="true"></ion-datetime>
+      </ion-item>
+    </ion-list>
+  </div>
 </div>
